@@ -1,3 +1,4 @@
+/* Faça um programa que leia três valores, faça a média, e mostre se foi bom ou ruim */
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,3 +1,4 @@
+/* Digite uma letra e mostre se é uma vogal, consoante, ou nenhum dos dois, lógica aplicada pelo professor*/
 #include <stdio.h>
 #include <stdlib.h>
 

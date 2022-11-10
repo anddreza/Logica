@@ -1,4 +1,4 @@
-// Dad uma letra, verificar se é verdadeiro ou falso. 
+// Dado uma letra, verificar se ï¿½ verdadeiro ou falso. 
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,7 +18,7 @@ int main (void){
 		printf("Falso\n");
 		
 	} else {
-		printf ("Erro, opção invalida\n");
+		printf ("Erro, opï¿½ï¿½o invalida\n");
 	} */
 	
 	switch(letra){

@@ -1,3 +1,4 @@
+/* Calculadora, parte da lÃ³gica veio da minha parte e parte veio procurando em sites*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,7 +8,7 @@ int main (void){
 	
 	printf("--------\n");
 	printf("[A] Adicao \n");
-	printf("[B] Substraçao \n");
+	printf("[B] Substraï¿½ao \n");
 	printf("[C] Multiplicacao \n");
 	printf("[D] Divisao \n");
 	printf("[E] Fim \n");

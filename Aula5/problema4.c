@@ -1,5 +1,5 @@
 
-/**/
+/* Peça um número e transforme ele em impar ou par*/
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,4 +1,5 @@
-#include<stdio.h>
+/* Sexo do indivíduo */
+#include <stdio.h>
 
 int main (){
 
