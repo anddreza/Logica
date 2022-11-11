@@ -1,4 +1,4 @@
-/*Transformar uma temperatura de Celsiu para Fahrenheit*/
+/*Transformar uma temperatura de Celsius para Fahrenheit*/
 #include <stdio.h>
 
 int main (void){

@@ -23,16 +23,16 @@ int main(void){
 				case 'a' : case 'e' : case 'i' : case 'o' : case 'u':
 				//	printf("E uma vogal \n");
 					x[i] = v[i];
-					vogal++;
+				//	vogal++;
 					break;
 				default:
 				//	printf("E uma consoante \n");
 					y[i] = v[i];
-					consoante++;
+				//	consoante++;
 			}
 		} else {
 			printf("Erro, nao e uma letra \n");
-			outros++;
+			//outros++;
 		}
 	}
 

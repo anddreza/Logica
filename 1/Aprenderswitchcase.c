@@ -1,3 +1,4 @@
+/*Dias da semana*/
 #include <stdio.h>
 
 int main(void){
