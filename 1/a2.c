@@ -1,3 +1,4 @@
+/* Faça uma apresentação de quem você é*/
 #include <stdio.h>
 
 int seg (void){

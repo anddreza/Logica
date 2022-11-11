@@ -1,5 +1,5 @@
+/*Transformar uma temperatura de Celsiu para Fahrenheit*/
 #include <stdio.h>
-
 
 int main (void){
 	float c, f;
