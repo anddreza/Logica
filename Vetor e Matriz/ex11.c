@@ -7,26 +7,26 @@ c) a quantidade de jogadores com altura superior a média, listando o nome e a a
 *******************************************************************************/
 
 #include <stdio.h>
-#define TAM 5 
-
 int main() {
-    float vet[TAM], i, maior, menor, soma = 0, MEDIA;
-
-    for (i = 0; i < TAM; i++) {
-        printf("Digite a altura dos meninos: ");
+    float vet[4], maior, menor, soma = 0, MEDIA;
+    int i;
+    char nome;
+    
+    for (i = 0; i < 5; i++) {
+        printf("Digite a altura do jogador: \n");
         scanf("%f", &vet[i]);
         fflush(stdin);
     }
     maior    = vet[0];
    
-    for (i = 1; i < TAM; i++) {
+    for (i = 1; i < 5; i++) {
         if (vet[i] > maior) {
             maior    = vet[i];
            
         }
     }
     menor    = vet[0];
-    for (i = 1; i < TAM; i++) {
+    for (i = 1; i < 5; i++) {
         if (vet[i] < menor) {
             menor    = vet[i];
             
@@ -35,19 +35,16 @@ int main() {
     
     soma = soma + vet[i];
     MEDIA = soma / 12;
-    
-    if(MEDIA > vet[i]){
-        
-    }
 
     //mostra o vetor
     printf("Vetor: ");
-    for (i = 0; i < TAM; i++) {
-        printf("%f ", vet[i]);
+    for (i = 0; i < 5; i++) {
+        printf("%.2f ", vet[i]);
     }
     
-    printf("\nMaior valor: %f, maior);
-    printf("\nMenor valor: %f", menor);
-    printf("\n Media valor: %f", MEDIA);
+    printf("\nMaior altura: %.2f", maior);
+    printf("\nMenor altura: %.2f", menor);
+    printf("\n Media valor: %.2f", MEDIA);
+    
     return 0;
 }
