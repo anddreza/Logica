@@ -22,14 +22,12 @@ int main() {
     for (i = 1; i < 5; i++) {
         if (vet[i] > maior) {
             maior    = vet[i];
-           
         }
     }
     menor    = vet[0];
     for (i = 1; i < 5; i++) {
         if (vet[i] < menor) {
             menor    = vet[i];
-            
         }
     }
     
