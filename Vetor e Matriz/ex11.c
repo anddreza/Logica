@@ -10,27 +10,32 @@ c) a quantidade de jogadores com altura superior a média, listando o nome e a a
 int main() {
     float vet[4], maior, menor, soma = 0, MEDIA;
     int i;
-    char nome[3][30];
+    char nome[5][30];
     
     for (i = 0; i < 5; i++) {
         printf("Digite o nome e a altura do jogador: \n");
-        scanf("%s%f", &nome[i], &vet[i]);
-        fflush(stdin);
+        scanf("%c%f", nome[i], &vet[i]);
+         fflush(stdin);
+        // flush_in();   // Limpa o teclado
+
     }
-    maior    = vet[0];
+    
+    maior= vet[0];
    
     for (i = 1; i < 5; i++) {
         if (vet[i] > maior) {
             maior    = vet[i];
         }
     }
-    menor    = vet[0];
+    
+    menor = vet[0];
     for (i = 1; i < 5; i++) {
         if (vet[i] < menor) {
             menor    = vet[i];
         }
     }
     
+    // Média dos jogadores: 
     soma = soma + vet[i];
     MEDIA = soma / 12;
 
@@ -40,10 +45,9 @@ int main() {
         printf("%.2f ", vet[i]);
     }
     
-    printf("\nNome do jogador com maior altura: %s%.2f", nome, maior);
-    printf("\nNome do jogador com menor altura: %s%.2f", nome, menor);
+    printf("\nNome do jogador com maior altura: %s%.2f", nome[i], maior);
+    printf("\nNome do jogador com menor altura: %s%.2f", nome[i], menor);
     printf("\nA media de altura do: %.2f", MEDIA);
     
 return 0;
 }
-
