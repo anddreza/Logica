@@ -8,46 +8,36 @@ c) a quantidade de jogadores com altura superior a média, listando o nome e a a
 
 #include <stdio.h>
 int main() {
-    float vet[4], maior, menor, soma = 0, MEDIA;
-    int i;
-    char nome[5][30];
+    float alt[4], maior = 0, menor = 0, soma = 0, MEDIA = 0;
+    int i, pos;
+    char nome[4][30];
     
     for (i = 0; i < 5; i++) {
-        printf("Digite o nome e a altura do jogador: \n");
-        scanf("%c%f", nome[i], &vet[i]);
-         fflush(stdin);
-        // flush_in();   // Limpa o teclado
+      printf("Digite o nome e a altura do jogador: \n");
+      scanf("%c %f", nome[i], &alt[i]);
+    //  fflush(stdin);
+    }
 
-    }
-    
-    maior= vet[0];
-   
-    for (i = 1; i < 5; i++) {
-        if (vet[i] > maior) {
-            maior    = vet[i];
-        }
-    }
-    
-    menor = vet[0];
-    for (i = 1; i < 5; i++) {
-        if (vet[i] < menor) {
-            menor    = vet[i];
-        }
-    }
-    
-    // Média dos jogadores: 
-    soma = soma + vet[i];
-    MEDIA = soma / 12;
-
-    //mostra o vetor
-    printf("Vetor: ");
     for (i = 0; i < 5; i++) {
-        printf("%.2f ", vet[i]);
+      if(alt[i] > maior){ // Comparar as alturas 
+        printf("\nO indice mais sera: %i", i);
+        maior = alt[i];  // Atribui a maior altura
+        pos = i; // Pega a posição da maior altura, para pegar o valor do nome 
+      }
+      // Média dos jogadores: 
+      soma = soma + alt[i];
+      MEDIA = soma / 5;
+      
+      if (MEDIA > alt[i]){
+        printf("O jogador e altura acima da media e %f", nome[pos], alt[i]);
+      }
     }
+
     
-    printf("\nNome do jogador com maior altura: %s%.2f", nome[i], maior);
-    printf("\nNome do jogador com menor altura: %s%.2f", nome[i], menor);
+    printf("\nNome do jogador com maior altura: %s %.2f", nome[pos], maior);
+    //printf("\nNome do jogador com menor altura: %s%.2f", nome[pos], alt[pos]);
     printf("\nA media de altura do: %.2f", MEDIA);
     
 return 0;
 }
+
