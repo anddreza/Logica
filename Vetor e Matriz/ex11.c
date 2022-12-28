@@ -22,7 +22,7 @@ int main() {
     }
 
     for (i = 0; i < 5; i++) {
-      if(alt[i] > maior){ // Comparar as alturas 
+        if(alt[i] > maior){ // Comparar as alturas 
      //   printf("\nO indice maior sera: %i", i);
         maior = alt[i];  // Atribui a maior altura
         pos = i; // Pega a posição da maior altura, para pegar o valor do nome 
