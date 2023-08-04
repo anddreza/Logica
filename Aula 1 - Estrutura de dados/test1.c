@@ -9,6 +9,8 @@
  
 int soma(int x, int y); 
 int subtracao(int x, int y);
+int dobroTiplo(int x, int y);
+int multiplicacao(int x, int y);
 
 int main(){
 	
@@ -18,6 +20,12 @@ int main(){
 
 	int d = subtracao(2, 2);
 	printf("%i\n", d);
+
+	int e = dobroTiplo(2, 2);
+	printf("%i\n", e);
+	
+	int f = multiplicacao(2, 4);
+	printf("%i\n", f);
 
 	return 0;
 }
@@ -32,3 +40,14 @@ int subtracao(int x, int y){
 	return a;
 }
 
+int dobroTiplo(int x, int y){
+	int a = x * x;
+	int b = y * y * y;
+	int c = a + b;
+	 return c; 
+}
+
+int multiplicacao(int x, int y){
+	int a = x * y;
+	return a;
+}
